@@ -27,10 +27,10 @@ const App = () => {
   return (
     <div className="main">
       <label >Email:</label>
-      <input value={Email} onChange={(e)=>setEmail(e.target.value)} type="text" placeholder="Email" />
+      <input id ="input-emai" value={Email} onChange={(e)=>setEmail(e.target.value)} type="text" placeholder="Email" />
       <label>passeord:</label>
-      <input value={password} onChange={(e)=>setPassword(e.target.value)} type="passeord" placeholder="password" />
-      <button onClick={()=>{
+      <input id="input-password" value={password} onChange={(e)=>setPassword(e.target.value)} type="passeord" placeholder="password" />
+      <button id="submit-form-btn" onClick={()=>{
         const user = data.find((user) => user.email === Email && user.password === password);
         if (user) {
           console.log("Login successful");
