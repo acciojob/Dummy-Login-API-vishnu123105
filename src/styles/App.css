@@ -1,12 +1,13 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
+body{
+    background-color: antiquewhite;
     
-
-button{
-    color: #27aedb;
-    text-align: center;
+    
+}
+.main{
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
 }
